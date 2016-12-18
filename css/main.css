@@ -1,79 +1,75 @@
 body, html {
-    background: url(bg.jpg);
-    background-size: 110px 69px;
-    font-family: 'Playfair Display', serif;
-}
-
-body p {
-    font-style: italic;
-    font-size: 16px;
-}
-
-.header h1 {
-    background: #ce2c38;
-    border-radius: 100%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    height: 140px;
-    margin: 60px auto 0;
-    position: relative;
-    text-align: center;
-    width: 140px;
-    z-index: 10;
-    
-}
-
-.header h1 span {
-    color:#fff;
-    display: block;
-    font-size: 40px;
-    padding: 34px 0 0 0;
-}
-
-.header h1 span+span {
-    color:#000;
-    display: block;
-    font-size: 28px;
+    background: #1c1c1c;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
     padding: 0;
 }
 
-.main .container {
-    background:#fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    margin: -70px auto 80px;
-    padding: 80px;
-    z-index: 0;
+span {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
 }
 
-h1 {
-    color: #444;
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    margin: 20px 0 0 0;
+.header {
+    background: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    color: #fff;
+    font-size: 36px;
+    padding: 20px 0;
     text-align: center;
     text-transform: uppercase;
 }
 
-h2 {
-    border-bottom: 1px solid #444;
-    color: #000;
-    font-family: 'Oswald', sans-serif;
-    margin: 20px 0 10px;
-    padding: 0 0 10px 0;
-    text-transform: uppercase;
+.main {
+    margin: 40px 0;
 }
 
-h3 {
-    color: #ce2c38;
-    font-family: 'Oswald', sans-serif;
-    margin: 10px 0 5px;
-    text-transform: uppercase;
+.row {
+    background: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    height: 50px;
+    margin: 8px auto;
+    padding: 0;
+    width: 100%;
 }
 
-.price p {
-    font-family: 'Oswald', sans-serif;
+.row img {
+    height: 50px;
+    width: 50px;
+}
+.row p, .row span {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.col-xs-6 p {
+    color: #fff;
     font-size: 20px;
-    font-style: normal;
-    margin: 26px 0 5px;
-    text-align: right;
 }
 
+.counters {
+    text-align: center;
+}
+
+.counters span {
+    background: #ffa800;
+    font-size: 20px;
+    width: 40px;
+}
+
+.counters span.count {
+    background: #fff;
+}
+
+@media (max-width: 480px) {
+    .col-xs-6 {
+        width: 41%;
+    }
+    .col-xs-4 {
+        width: 42%;
+    }
+}
